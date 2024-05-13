@@ -39,3 +39,43 @@ public:
         cout << "Phone: " << phone << endl;
     }
 };
+
+// Vehicle class
+class Vehicle {
+public:
+    int vehicleID;
+    string type, brand, model, year, condition;
+    bool availability;
+    void addVehicle() {
+        cout << "Enter vehicle ID: ";
+        cin >> vehicleID;
+        cout << "Enter vehicle type: ";
+        cin >> type;
+        cout << "Enter vehicle brand: ";
+        cin >> brand;
+        cout << "Enter vehicle model: ";
+        cin >> model;
+        cout << "Enter vehicle year: ";
+        cin >> year;
+        cout << "Enter vehicle condition: ";
+        cin >> condition;
+        availability = true;
+    }
+    void updateVehicle() {
+        cout << "Enter new vehicle condition: ";
+        cin >> condition;
+    }
+    void searchVehicle() {
+        cout << "Vehicle ID: " << vehicleID << endl;
+        cout << "Vehicle type: " << type << endl;
+        cout << "Vehicle brand: " << brand << endl;
+        cout << "Vehicle model: " << model << endl;
+        cout << "Vehicle year: " << year << endl;
+        cout << "Vehicle condition: " << condition << endl;
+        if (availability) {
+            cout << "Vehicle is available." << endl;
+        } else {
+            cout << "Vehicle is not available." << endl;
+        }
+    }
+};
