@@ -132,3 +132,20 @@ public:
     }
 };
 
+// Pricing class
+class Pricing {
+public:
+    string vehicleType;
+    double dailyRate, weeklyRate, monthlyRate;
+    void calculatePrice() {
+        cout << "Enter vehicle type: ";
+        cin >> vehicleType;
+        cout << "Enter daily rate: ";
+        cin >> dailyRate;
+        cout << "Enter weekly rate: ";
+        cin >> weeklyRate;
+        cout << "Enter monthly rate: ";
+        cin >> monthlyRate;
+    }
+};
+
