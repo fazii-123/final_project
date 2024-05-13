@@ -203,3 +203,20 @@ public:
     }
 };
 
+// Feedback class
+class Feedback {
+public:
+    int rating;
+    string comment;
+    void addFeedback() {
+        cout << "Enter rating (1-5): ";
+        cin >> rating;
+        cout << "Enter comment: ";
+        cin >> comment;
+    }
+    void viewFeedback() {
+        cout << "Rating: " << rating << endl;
+        cout << "Comment: " << comment << endl;
+    }
+};
+
