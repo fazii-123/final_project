@@ -2,3 +2,40 @@
 #include <string>
 
 using namespace std;
+
+
+// User class
+class User {
+public:
+    string username, password, name, email, phone;
+    void registerUser() {
+        cout << "Enter username: ";
+        cin >> username;
+        cout << "Enter password: ";
+        cin >> password;
+        cout << "Enter name: ";
+        cin >> name;
+        cout << "Enter email: ";
+        cin >> email;
+        cout << "Enter phone: ";
+        cin >> phone;
+    }
+    void login() {
+        string enteredUsername, enteredPassword;
+        cout << "Enter username: ";
+        cin >> enteredUsername;
+        cout << "Enter password: ";
+        cin >> enteredPassword;
+        if (enteredUsername == username && enteredPassword == password) {
+            cout << "Login successful!" << endl;
+        } else {
+            cout << "Invalid username or password!" << endl;
+        }
+    }
+    void profile() {
+        cout << "Username: " << username << endl;
+        cout << "Name: " << name << endl;
+        cout << "Email: " << email << endl;
+        cout << "Phone: " << phone << endl;
+    }
+};
