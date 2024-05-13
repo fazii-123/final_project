@@ -107,3 +107,28 @@ public:
     }
 };
 
+// Booking class
+class Booking {
+public:
+    int bookingID, reservationID;
+    string paymentMethod, paymentStatus;
+    void makeBooking() {
+        cout << "Enter reservation ID: ";
+        cin >> reservationID;
+        cout << "Enter payment method: ";
+        cin >> paymentMethod;
+        paymentStatus = "pending";
+    }
+    void updateBooking() {
+        cout << "Enter payment status: ";
+        cin >> paymentStatus;
+    }
+    void confirmPayment() {
+        if (paymentStatus == "paid") {
+            cout << "Booking confirmed!" << endl;
+        } else {
+            cout << "Payment pending!" << endl;
+        }
+    }
+};
+
