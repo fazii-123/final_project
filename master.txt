@@ -169,3 +169,20 @@ public:
     }
 };
 
+// GPS Tracking class
+class GPSTracking {
+public:
+    int vehicleID;
+    string location;
+    void updateLocation() {
+        cout << "Enter vehicle ID: ";
+        cin >> vehicleID;
+        cout << "Enter location: ";
+        cin >> location;
+    }
+    void trackVehicle() {
+        cout << "Vehicle ID: " << vehicleID << endl;
+        cout << "Location: " << location << endl;
+    }
+};
+
