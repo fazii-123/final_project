@@ -79,3 +79,31 @@ public:
         }
     }
 };
+
+// Reservation class
+class Reservation {
+public:
+    int reservationID, vehicleID, userID;
+    string startDate, endDate, status;
+    void makeReservation() {
+        cout << "Enter vehicle ID: ";
+        cin >> vehicleID;
+        cout << "Enter user ID: ";
+        cin >> userID;
+        cout << "Enter start date: ";
+        cin >> startDate;
+        cout << "Enter end date: ";
+        cin >> endDate;
+        status = "pending";
+    }
+    void cancelReservation() {
+        status = "cancelled";
+    }
+    void updateReservation() {
+        cout << "Enter new start date: ";
+        cin >> startDate;
+        cout << "Enter new end date: ";
+        cin >> endDate;
+    }
+};
+
