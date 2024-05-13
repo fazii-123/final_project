@@ -186,3 +186,20 @@ public:
     }
 };
 
+// Maintenance class
+class Maintenance {
+public:
+    int vehicleID;
+    string maintenanceStatus;
+    void scheduleMaintenance() {
+        cout << "Enter vehicle ID: ";
+        cin >> vehicleID;
+        cout << "Enter maintenance status: ";
+        cin >> maintenanceStatus;
+    }
+    void updateMaintenance() {
+        cout << "Enter new maintenance status: ";
+        cin >> maintenanceStatus;
+    }
+};
+
