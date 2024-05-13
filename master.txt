@@ -220,3 +220,17 @@ public:
     }
 };
 
+// Customer Support class
+class CustomerSupport {
+public:
+    string issue, resolution;
+    void reportIssue() {
+        cout << "Enter issue: ";
+        cin >> issue;
+    }
+    void resolveIssue() {
+        cout << "Enter resolution: ";
+        cin >> resolution;
+    }
+};
+
