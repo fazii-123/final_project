@@ -149,3 +149,23 @@ public:
     }
 };
 
+// AvailabilityCalendar class
+class AvailabilityCalendar {
+public:
+    int vehicleID;
+    bool availabilityStatus;
+    void updateAvailability() {
+        cout << "Enter vehicle ID: ";
+        cin >> vehicleID;
+        cout << "Enter availability status (0/1): ";
+        cin >> availabilityStatus;
+    }
+    void checkAvailability() {
+        if (availabilityStatus) {
+            cout << "Vehicle is available." << endl;
+        } else {
+            cout << "Vehicle is not available." << endl;
+        }
+    }
+};
+
